@@ -28,7 +28,7 @@ dfx deploy icrc1-ledger --argument "(variant { Init = record {
 }})"
 ```
 ## Transfer
-The code for transfering tokens can be found at Transfer.js
+The code for transfering tokens can be found at `Transfer.js`
 
 ## Display History
-The code for displaying history can be found at DisplayHistory.js
+The code for displaying history can be found at `DisplayHistory.js`
