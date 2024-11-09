@@ -6,7 +6,7 @@ Objectives:
 - Display History
 
 ## Minting
-The minting was done during deployment Time:
+The Minting was done during the Initialization of the ICRC-1 Token :
 ``` bash
 dfx deploy icrc1-ledger --argument "(variant { Init = record {
   token_symbol = \"ART\";
@@ -27,8 +27,15 @@ dfx deploy icrc1-ledger --argument "(variant { Init = record {
   };
 }})"
 ```
+The resources i used to deploy this ICRC1 Ledger along with the Index Canister were:
+- https://github.com/dfinity/ic/tree/master/rs/ledger_suite/icrc1/ledger
+- https://internetcomputer.org/docs/current/developer-docs/defi/tokens/indexes
+
+Ther wasms were combined within the same dfx.json folder. Understand more on the Deployed [Token Folder](https://github.com/AymericRT/TokenDeploymentandInteraction/tree/main/Token%20Folder).
+
+
 ## Transfer
-The code for transfering tokens can be found at `Transfer.js`
+The code for transfering tokens using [`IC-JS`](https://github.com/dfinity/ic-js/tree/main/packages/ledger-icrc) can be found at [`Transfer.js`](./Transfer.js)
 
 ## Display History
-The code for displaying history can be found at `DisplayHistory.js`
+The code for displaying history using [`IC-JS`](https://github.com/dfinity/ic-js/tree/main/packages/ledger-icrc) can be found at [`DisplayHistory.js`](./DisplayHistory.js)
